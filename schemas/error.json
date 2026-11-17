@@ -1,0 +1,25 @@
+
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Messaggio di errore",
+    "type": "object",
+    "required": [
+        "codice",
+        "messaggio"
+    ],
+    "properties": {
+        "codice": {
+            "type": "integer",
+            "minimum": 400,
+            "maximum": 599
+        },
+        "messaggio": {
+            "type": "string",
+            "minLength": 1
+        },
+        "campo": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

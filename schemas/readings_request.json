@@ -1,0 +1,26 @@
+
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Richiesta misurazioni",
+    "type": "object",
+    "required": [
+        "sensor_id",
+        "inizio",
+        "fine"
+    ],
+    "properties": {
+        "sensor_id": {
+            "type": "string",
+            "pattern": "^[A-Z]+-[A-Z]{2}-[0-9]{3}$"
+        },
+        "inizio": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "fine": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "additionalProperties": false
+}

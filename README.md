@@ -39,6 +39,28 @@ I messaggi vengono cifrati e controllati tramite JSON Schema per verificare che 
 ## Obiettivo
 Realizzare un sistema semplice per comprendere il funzionamento della comunicazione client-server, della crittografia e della validazione dei dati JSON.
 
+## Struttura del progetto
+
+```
+FrigoTrack/
+├── Client/        # client HTTP e sensori simulati
+│   └── Sensori/
+├── Server/        # server HTTP
+│   └── Modelli/
+├── Tests/         # test xUnit
+├── schemas/       # JSON Schema dei messaggi
+├── data/          # misurazioni salvate
+└── FrigoTrack.sln
+```
+
+## Avvio
+
+```bash
+dotnet run --project Server
+dotnet run --project Client
+dotnet test
+```
+
 ## Autore
 Progetto scolastico individuale – Classe 5IB
 
